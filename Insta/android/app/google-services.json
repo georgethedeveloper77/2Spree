@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "308440107515",
+    "firebase_url": "https://spree-66119.firebaseio.com",
+    "project_id": "spree-66119",
+    "storage_bucket": "spree-66119.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308440107515:android:2dd3fc738c95f20f5aa35e",
+        "android_client_info": {
+          "package_name": "com.mindhunter.spree"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308440107515-iu7smvt33m8c4f9lfefjod39i1f8kmn4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mindhunter.spree",
+            "certificate_hash": "dfd9a2c1c53d37c5e692ed2edd402e4440a2ded4"
+          }
+        },
+        {
+          "client_id": "308440107515-46rkac09398v7iq2pcoiisknrjo3782a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGA4lhEKSlGCRSXXXjzV0r_AAmfKFmMIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308440107515-46rkac09398v7iq2pcoiisknrjo3782a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
