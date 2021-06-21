@@ -55,12 +55,16 @@ class FeedBuilder implements Builder<Feed, FeedBuilder> {
   _$Feed _$v;
 
   String _name;
+
   String get name => _$this._name;
+
   set name(String name) => _$this._name = name;
 
   ListBuilder<String> _photosIds;
+
   ListBuilder<String> get photosIds =>
       _$this._photosIds ??= new ListBuilder<String>();
+
   set photosIds(ListBuilder<String> photosIds) => _$this._photosIds = photosIds;
 
   FeedBuilder();

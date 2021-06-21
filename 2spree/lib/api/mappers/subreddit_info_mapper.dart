@@ -3,8 +3,7 @@ import 'package:reddigram/models/models.dart' as models;
 
 class SubredditInfoMapper {
   static models.Subreddit map(SubredditResponse response) {
-    return models.Subreddit((b) =>
-    b
+    return models.Subreddit((b) => b
       ..id = response.data.name
       ..name = response.data.displayName
       ..nsfw = response.data.nsfw ?? false

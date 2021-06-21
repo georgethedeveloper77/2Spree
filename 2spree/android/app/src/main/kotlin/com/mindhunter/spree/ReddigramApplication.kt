@@ -26,12 +26,13 @@ class ReddigramApplication : FlutterApplication() {
         // Create the NotificationChannel, but only on API 26+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(
-                    DOWNLOAD_CHANNEL_ID,
-                    "Downloading photos",
-                    NotificationManager.IMPORTANCE_DEFAULT)
+                DOWNLOAD_CHANNEL_ID,
+                "Downloading photos",
+                NotificationManager.IMPORTANCE_DEFAULT
+            )
 
             val notificationManager: NotificationManager =
-                    getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+                getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             notificationManager.createNotificationChannel(channel)
         }
     }

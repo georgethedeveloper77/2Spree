@@ -7,7 +7,7 @@ import 'package:redux_thunk/redux_thunk.dart' show thunkMiddleware;
 void main() {
   FlutterError.onError = (details) {
     FlutterError.dumpErrorToConsole(details);
-    /* FirebaseCrashlytics.instance.crash();*/
+    /*FirebaseCrashlytics.instance.crash();*/
   };
 
   final store = Store<ReddigramState>(

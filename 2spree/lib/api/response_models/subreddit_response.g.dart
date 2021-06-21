@@ -287,8 +287,10 @@ class SubredditListResponseBuilder
   _$SubredditListResponse _$v;
 
   SubredditListDataBuilder _data;
+
   SubredditListDataBuilder get data =>
       _$this._data ??= new SubredditListDataBuilder();
+
   set data(SubredditListDataBuilder data) => _$this._data = data;
 
   SubredditListResponseBuilder();
@@ -381,8 +383,10 @@ class SubredditListDataBuilder
   _$SubredditListData _$v;
 
   ListBuilder<SubredditResponse> _children;
+
   ListBuilder<SubredditResponse> get children =>
       _$this._children ??= new ListBuilder<SubredditResponse>();
+
   set children(ListBuilder<SubredditResponse> children) =>
       _$this._children = children;
 
@@ -475,7 +479,9 @@ class SubredditResponseBuilder
   _$SubredditResponse _$v;
 
   SubredditBuilder _data;
+
   SubredditBuilder get data => _$this._data ??= new SubredditBuilder();
+
   set data(SubredditBuilder data) => _$this._data = data;
 
   SubredditResponseBuilder();
@@ -613,32 +619,46 @@ class SubredditBuilder implements Builder<Subreddit, SubredditBuilder> {
   _$Subreddit _$v;
 
   String _name;
+
   String get name => _$this._name;
+
   set name(String name) => _$this._name = name;
 
   String _displayName;
+
   String get displayName => _$this._displayName;
+
   set displayName(String displayName) => _$this._displayName = displayName;
 
   bool _nsfw;
+
   bool get nsfw => _$this._nsfw;
+
   set nsfw(bool nsfw) => _$this._nsfw = nsfw;
 
   String _primaryColor;
+
   String get primaryColor => _$this._primaryColor;
+
   set primaryColor(String primaryColor) => _$this._primaryColor = primaryColor;
 
   String _iconUrl;
+
   String get iconUrl => _$this._iconUrl;
+
   set iconUrl(String iconUrl) => _$this._iconUrl = iconUrl;
 
   String _subredditType;
+
   String get subredditType => _$this._subredditType;
+
   set subredditType(String subredditType) =>
       _$this._subredditType = subredditType;
 
   String _submissionType;
+
   String get submissionType => _$this._submissionType;
+
   set submissionType(String submissionType) =>
       _$this._submissionType = submissionType;
 

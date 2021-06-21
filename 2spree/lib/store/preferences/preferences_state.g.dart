@@ -88,15 +88,21 @@ class PreferencesStateBuilder
   _$PreferencesState _$v;
 
   AppTheme _theme;
+
   AppTheme get theme => _$this._theme;
+
   set theme(AppTheme theme) => _$this._theme = theme;
 
   bool _showNsfw;
+
   bool get showNsfw => _$this._showNsfw;
+
   set showNsfw(bool showNsfw) => _$this._showNsfw = showNsfw;
 
   bool _cutLongPhotos;
+
   bool get cutLongPhotos => _$this._cutLongPhotos;
+
   set cutLongPhotos(bool cutLongPhotos) =>
       _$this._cutLongPhotos = cutLongPhotos;
 

@@ -1,12 +1,12 @@
 import 'dart:math';
 
-import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_widgets/flutter_widgets.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:reddigram/models/models.dart';
 import 'package:reddigram/widgets/widgets.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'package:video_player/video_player.dart';
 
 class PhotoListItem extends StatelessWidget {
@@ -392,7 +392,8 @@ class _TitleOverlayState extends State<_TitleOverlay> {
             child: Container(
               alignment: Alignment.center,
               padding: const EdgeInsets.all(16),
-              color: Theme.of(context).scaffoldBackgroundColor.withOpacity(0.87),
+              color:
+                  Theme.of(context).scaffoldBackgroundColor.withOpacity(0.87),
               child: Text(
                 widget.title,
                 style: Theme.of(context).textTheme.title,

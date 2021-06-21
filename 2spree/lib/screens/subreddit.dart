@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:reddigram/models/models.dart';
@@ -120,7 +121,9 @@ class _SubredditScreenState extends State<SubredditScreen> {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 5.0),
-            child: Tab(icon: Icon(Icons.view_list)),
+            child: Tab(
+              icon: Icon(Icons.view_list),
+            ),
           ),
         ],
       ),
@@ -260,7 +263,7 @@ class _SubredditScreenState extends State<SubredditScreen> {
                     return Container(
                       padding: const EdgeInsets.symmetric(vertical: 32.0),
                       alignment: Alignment.center,
-                      child: const CircularProgressIndicator(),
+                      child: const CupertinoActivityIndicator(),
                     );
                   }
 

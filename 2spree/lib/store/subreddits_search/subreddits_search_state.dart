@@ -12,9 +12,11 @@ abstract class SubredditsSearchState
   SubredditsSearchState._();
 
   factory SubredditsSearchState([updates(SubredditsSearchStateBuilder b)]) {
-    return _$SubredditsSearchState._(
-      lastQuery: '',
-      resultFeedsIds: BuiltList<String>([]),
-    ).rebuild(updates);
+    return _$SubredditsSearchState
+        ._(
+          lastQuery: '',
+          resultFeedsIds: BuiltList<String>([]),
+        )
+        .rebuild(updates);
   }
 }

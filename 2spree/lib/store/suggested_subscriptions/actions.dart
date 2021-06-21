@@ -10,10 +10,9 @@ ThunkAction<ReddigramState> fetchSuggestedSubscriptions([Completer completer]) {
     apiRepository
         .suggestedSubreddits(store.state.subscriptions.toList())
         .then((suggestions) {
-          store.dispatch(FetchedSuggestedSubscriptions(suggestions));
-          store.dispatch(fetchSubreddits(suggestions));
-        })
-        .whenComplete(() => completer?.complete());
+      store.dispatch(FetchedSuggestedSubscriptions(suggestions));
+      store.dispatch(fetchSubreddits(suggestions));
+    }).whenComplete(() => completer?.complete());
   };
 }
 

@@ -5,7 +5,7 @@ import 'package:photo_view/photo_view.dart';
 import 'package:reddigram/models/models.dart';
 
 class PhotoPreviewScreen extends StatelessWidget {
-  static const _methodChannel = const MethodChannel('me.wolszon.reddigram');
+  static const _methodChannel = const MethodChannel('com.mindhunter.spree');
 
   static PageRoute route(Photo photo) {
     return MaterialPageRoute(

@@ -14,11 +14,13 @@ abstract class PreferencesState
   PreferencesState._();
 
   factory PreferencesState([updates(PreferencesStateBuilder b)]) {
-    return _$PreferencesState._(
-      theme: AppTheme.light,
-      showNsfw: false,
-      cutLongPhotos: false,
-    ).rebuild(updates);
+    return _$PreferencesState
+        ._(
+          theme: AppTheme.light,
+          showNsfw: false,
+          cutLongPhotos: false,
+        )
+        .rebuild(updates);
   }
 }
 

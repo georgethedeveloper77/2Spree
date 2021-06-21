@@ -124,47 +124,63 @@ class ReddigramStateBuilder
   _$ReddigramState _$v;
 
   AuthStateBuilder _authState;
+
   AuthStateBuilder get authState =>
       _$this._authState ??= new AuthStateBuilder();
+
   set authState(AuthStateBuilder authState) => _$this._authState = authState;
 
   PreferencesStateBuilder _preferences;
+
   PreferencesStateBuilder get preferences =>
       _$this._preferences ??= new PreferencesStateBuilder();
+
   set preferences(PreferencesStateBuilder preferences) =>
       _$this._preferences = preferences;
 
   MapBuilder<String, Photo> _photos;
+
   MapBuilder<String, Photo> get photos =>
       _$this._photos ??= new MapBuilder<String, Photo>();
+
   set photos(MapBuilder<String, Photo> photos) => _$this._photos = photos;
 
   MapBuilder<String, Feed> _feeds;
+
   MapBuilder<String, Feed> get feeds =>
       _$this._feeds ??= new MapBuilder<String, Feed>();
+
   set feeds(MapBuilder<String, Feed> feeds) => _$this._feeds = feeds;
 
   MapBuilder<String, Subreddit> _subreddits;
+
   MapBuilder<String, Subreddit> get subreddits =>
       _$this._subreddits ??= new MapBuilder<String, Subreddit>();
+
   set subreddits(MapBuilder<String, Subreddit> subreddits) =>
       _$this._subreddits = subreddits;
 
   SetBuilder<String> _subscriptions;
+
   SetBuilder<String> get subscriptions =>
       _$this._subscriptions ??= new SetBuilder<String>();
+
   set subscriptions(SetBuilder<String> subscriptions) =>
       _$this._subscriptions = subscriptions;
 
   SetBuilder<String> _suggestedSubscriptions;
+
   SetBuilder<String> get suggestedSubscriptions =>
       _$this._suggestedSubscriptions ??= new SetBuilder<String>();
+
   set suggestedSubscriptions(SetBuilder<String> suggestedSubscriptions) =>
       _$this._suggestedSubscriptions = suggestedSubscriptions;
 
   SubredditsSearchStateBuilder _subredditsSearch;
+
   SubredditsSearchStateBuilder get subredditsSearch =>
       _$this._subredditsSearch ??= new SubredditsSearchStateBuilder();
+
   set subredditsSearch(SubredditsSearchStateBuilder subredditsSearch) =>
       _$this._subredditsSearch = subredditsSearch;
 

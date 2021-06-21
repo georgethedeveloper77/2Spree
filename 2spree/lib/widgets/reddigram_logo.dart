@@ -6,7 +6,7 @@ class ReddigramLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      'Glance',
+      '2Spree',
       style: TextStyle(
         fontFamily: 'Pacifico',
         fontSize: 22.0,

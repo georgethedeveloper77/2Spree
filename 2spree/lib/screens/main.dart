@@ -15,8 +15,8 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   static const _TAB_POPULAR = 0;
   static const _TAB_BEST = 1; // ignore: unused_field
-  static const _TAB_NEWEST = 2; // ignore: unused_field
-  static const _TAB_SUBSCRIPTIONS = 3;
+  static const _TAB_SUBSCRIPTIONS = 2;
+  static const _TAB_NEWEST = 3; // ignore: unused_field
 
   final feedKeys = List.generate(3, (i) => GlobalKey<InfiniteListState>());
 
@@ -72,6 +72,7 @@ class _MainScreenState extends State<MainScreen> {
               infiniteListKey: feedKeys[0],
               placeholder: itemsPlaceholder,
             ),
+            const SubscriptionsTab(),
             FeedTab(
               feedName: BEST_SUBSCRIBED,
               infiniteListKey: feedKeys[1],
@@ -82,27 +83,48 @@ class _MainScreenState extends State<MainScreen> {
               infiniteListKey: feedKeys[2],
               placeholder: anySubs ? itemsPlaceholder : subscribeCTA,
             ),
-            const SubscriptionsTab(),
           ],
         ),
       ),
-      bottomNavigationBar: IconNavigationBar(
+      bottomNavigationBar:
+          /*FancyBottomNavigation(
+          initialSelection: _currentTab,
+          tabs: [
+            TabData(iconData: Icons.show_chart, title: "Popular"),
+            TabData(iconData: Icons.whatshot, title: "Search"),
+            TabData(iconData: Icons.star, title: "Newest"),
+            TabData(iconData: Icons.short_text, title: "Subs")
+          ],
+          onTabChangedListener: (index) {
+            setState(() {
+              if (_currentTab != index) {
+                // Change the current tab
+                _changeTab(index);
+              } else {
+                // Scroll to the top
+                setState(() => feedKeys[index].currentState.scrollToOffset(0));
+              }
+            });
+          },
+        ),*/
+
+          IconNavigationBar(
         currentIndex: _currentTab,
         icons: [
           const IconNavigationBarItem(
-            icon: Icon(Icons.show_chart),
+            icon: Icon(Icons.whatshot),
             tooltip: 'Popular',
           ),
           const IconNavigationBarItem(
-            icon: Icon(Icons.whatshot),
+            icon: Icon(Icons.search),
             tooltip: 'Your best',
           ),
           const IconNavigationBarItem(
-            icon: Icon(Icons.star),
+            icon: Icon(Icons.apps),
             tooltip: 'Your newest',
           ),
           const IconNavigationBarItem(
-            icon: Icon(Icons.short_text),
+            icon: Icon(Icons.widgets),
             tooltip: 'Subscriptions',
           ),
         ],
@@ -125,7 +147,7 @@ class _MainScreenState extends State<MainScreen> {
       _pageController.animateToPage(
         tab,
         duration: const Duration(milliseconds: 300),
-        curve: Curves.ease,
+        curve: Curves.easeInOutCubic,
       );
     });
   }
@@ -155,7 +177,10 @@ class _MainScreenState extends State<MainScreen> {
               width: 3,
             ),
           ),
-          child: const Icon(Icons.account_circle),
+          child: const Icon(
+            Icons.account_balance_rounded,
+            size: 30.0,
+          ),
         ),
       ),
       onPressed: () {

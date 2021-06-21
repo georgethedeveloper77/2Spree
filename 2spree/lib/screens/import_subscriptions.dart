@@ -1,5 +1,4 @@
-import 'dart:async';
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:reddigram/api/api.dart';
@@ -105,7 +104,9 @@ class _ImportSubscriptionsScreenState extends State<ImportSubscriptionsScreen> {
                 ? _subscriptions.isNotEmpty
                     ? _buildList(context)
                     : const ListTile(title: Text('No items to show'))
-                : const Center(child: CircularProgressIndicator()),
+                : const Center(
+                    child: CupertinoActivityIndicator(),
+                  ),
           ),
           _buildFooter(context),
         ],

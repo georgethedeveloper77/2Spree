@@ -10,16 +10,16 @@ class DarkThemePreferenceTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return StoreConnector<ReddigramState, PreferenceViewModel>(
       converter: (store) => PreferenceViewModel<AppTheme>(
-            value: store.state.preferences.theme,
-            onSwitch: (dark) =>
-                store.dispatch(setTheme(dark ? AppTheme.dark : AppTheme.light)),
-          ),
+        value: store.state.preferences.theme,
+        onSwitch: (dark) =>
+            store.dispatch(setTheme(dark ? AppTheme.dark : AppTheme.light)),
+      ),
       builder: (context, vm) => SwitchListTile(
-            title: const Text('Dark theme'),
-            secondary: const Icon(Icons.invert_colors),
-            value: vm.value == AppTheme.dark,
-            onChanged: vm.onSwitch,
-          ),
+        title: const Text('Dark theme'),
+        secondary: const Icon(Icons.invert_colors),
+        value: vm.value == AppTheme.dark,
+        onChanged: vm.onSwitch,
+      ),
     );
   }
 }

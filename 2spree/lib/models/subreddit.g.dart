@@ -171,27 +171,39 @@ class SubredditBuilder implements Builder<Subreddit, SubredditBuilder> {
   _$Subreddit _$v;
 
   String _id;
+
   String get id => _$this._id;
+
   set id(String id) => _$this._id = id;
 
   String _name;
+
   String get name => _$this._name;
+
   set name(String name) => _$this._name = name;
 
   bool _nsfw;
+
   bool get nsfw => _$this._nsfw;
+
   set nsfw(bool nsfw) => _$this._nsfw = nsfw;
 
   String _primaryColor;
+
   String get primaryColor => _$this._primaryColor;
+
   set primaryColor(String primaryColor) => _$this._primaryColor = primaryColor;
 
   String _iconUrl;
+
   String get iconUrl => _$this._iconUrl;
+
   set iconUrl(String iconUrl) => _$this._iconUrl = iconUrl;
 
   String _submissionType;
+
   String get submissionType => _$this._submissionType;
+
   set submissionType(String submissionType) =>
       _$this._submissionType = submissionType;
 

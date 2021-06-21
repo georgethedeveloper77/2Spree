@@ -602,8 +602,10 @@ class LinkListingResponseBuilder
   _$LinkListingResponse _$v;
 
   LinkListingDataBuilder _data;
+
   LinkListingDataBuilder get data =>
       _$this._data ??= new LinkListingDataBuilder();
+
   set data(LinkListingDataBuilder data) => _$this._data = data;
 
   LinkListingResponseBuilder();
@@ -705,16 +707,22 @@ class LinkListingDataBuilder
   _$LinkListingData _$v;
 
   String _after;
+
   String get after => _$this._after;
+
   set after(String after) => _$this._after = after;
 
   String _before;
+
   String get before => _$this._before;
+
   set before(String before) => _$this._before = before;
 
   ListBuilder<LinkChild> _children;
+
   ListBuilder<LinkChild> get children =>
       _$this._children ??= new ListBuilder<LinkChild>();
+
   set children(ListBuilder<LinkChild> children) => _$this._children = children;
 
   LinkListingDataBuilder();
@@ -807,7 +815,9 @@ class LinkChildBuilder implements Builder<LinkChild, LinkChildBuilder> {
   _$LinkChild _$v;
 
   LinkChildDataBuilder _data;
+
   LinkChildDataBuilder get data => _$this._data ??= new LinkChildDataBuilder();
+
   set data(LinkChildDataBuilder data) => _$this._data = data;
 
   LinkChildBuilder();
@@ -1027,65 +1037,95 @@ class LinkChildDataBuilder
   _$LinkChildData _$v;
 
   String _name;
+
   String get name => _$this._name;
+
   set name(String name) => _$this._name = name;
 
   String _title;
+
   String get title => _$this._title;
+
   set title(String title) => _$this._title = title;
 
   String _subreddit;
+
   String get subreddit => _$this._subreddit;
+
   set subreddit(String subreddit) => _$this._subreddit = subreddit;
 
   String _subredditId;
+
   String get subredditId => _$this._subredditId;
+
   set subredditId(String subredditId) => _$this._subredditId = subredditId;
 
   String _permalink;
+
   String get permalink => _$this._permalink;
+
   set permalink(String permalink) => _$this._permalink = permalink;
 
   String _author;
+
   String get author => _$this._author;
+
   set author(String author) => _$this._author = author;
 
   int _score;
+
   int get score => _$this._score;
+
   set score(int score) => _$this._score = score;
 
   bool _likes;
+
   bool get likes => _$this._likes;
+
   set likes(bool likes) => _$this._likes = likes;
 
   String _thumbnail;
+
   String get thumbnail => _$this._thumbnail;
+
   set thumbnail(String thumbnail) => _$this._thumbnail = thumbnail;
 
   int _thumbnailWidth;
+
   int get thumbnailWidth => _$this._thumbnailWidth;
+
   set thumbnailWidth(int thumbnailWidth) =>
       _$this._thumbnailWidth = thumbnailWidth;
 
   int _thumbnailHeight;
+
   int get thumbnailHeight => _$this._thumbnailHeight;
+
   set thumbnailHeight(int thumbnailHeight) =>
       _$this._thumbnailHeight = thumbnailHeight;
 
   bool _over18;
+
   bool get over18 => _$this._over18;
+
   set over18(bool over18) => _$this._over18 = over18;
 
   PreviewBuilder _preview;
+
   PreviewBuilder get preview => _$this._preview ??= new PreviewBuilder();
+
   set preview(PreviewBuilder preview) => _$this._preview = preview;
 
   MediaBuilder _media;
+
   MediaBuilder get media => _$this._media ??= new MediaBuilder();
+
   set media(MediaBuilder media) => _$this._media = media;
 
   bool _isVideo;
+
   bool get isVideo => _$this._isVideo;
+
   set isVideo(bool isVideo) => _$this._isVideo = isVideo;
 
   LinkChildDataBuilder();
@@ -1212,13 +1252,17 @@ class PreviewBuilder implements Builder<Preview, PreviewBuilder> {
   _$Preview _$v;
 
   ListBuilder<PreviewImage> _images;
+
   ListBuilder<PreviewImage> get images =>
       _$this._images ??= new ListBuilder<PreviewImage>();
+
   set images(ListBuilder<PreviewImage> images) => _$this._images = images;
 
   RedditVideoBuilder _redditVideoPreview;
+
   RedditVideoBuilder get redditVideoPreview =>
       _$this._redditVideoPreview ??= new RedditVideoBuilder();
+
   set redditVideoPreview(RedditVideoBuilder redditVideoPreview) =>
       _$this._redditVideoPreview = redditVideoPreview;
 
@@ -1324,12 +1368,16 @@ class PreviewImageBuilder
   _$PreviewImage _$v;
 
   ImageBuilder _source;
+
   ImageBuilder get source => _$this._source ??= new ImageBuilder();
+
   set source(ImageBuilder source) => _$this._source = source;
 
   ListBuilder<Image> _resolutions;
+
   ListBuilder<Image> get resolutions =>
       _$this._resolutions ??= new ListBuilder<Image>();
+
   set resolutions(ListBuilder<Image> resolutions) =>
       _$this._resolutions = resolutions;
 
@@ -1440,15 +1488,21 @@ class ImageBuilder implements Builder<Image, ImageBuilder> {
   _$Image _$v;
 
   String _url;
+
   String get url => _$this._url;
+
   set url(String url) => _$this._url = url;
 
   int _width;
+
   int get width => _$this._width;
+
   set width(int width) => _$this._width = width;
 
   int _height;
+
   int get height => _$this._height;
+
   set height(int height) => _$this._height = height;
 
   ImageBuilder();
@@ -1524,8 +1578,10 @@ class MediaBuilder implements Builder<Media, MediaBuilder> {
   _$Media _$v;
 
   RedditVideoBuilder _redditVideo;
+
   RedditVideoBuilder get redditVideo =>
       _$this._redditVideo ??= new RedditVideoBuilder();
+
   set redditVideo(RedditVideoBuilder redditVideo) =>
       _$this._redditVideo = redditVideo;
 
@@ -1616,7 +1672,9 @@ class RedditVideoBuilder implements Builder<RedditVideo, RedditVideoBuilder> {
   _$RedditVideo _$v;
 
   String _fallbackUrl;
+
   String get fallbackUrl => _$this._fallbackUrl;
+
   set fallbackUrl(String fallbackUrl) => _$this._fallbackUrl = fallbackUrl;
 
   RedditVideoBuilder();

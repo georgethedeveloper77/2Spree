@@ -48,18 +48,22 @@ class MainActivity : FlutterActivity() {
 
     private fun downloadPhoto(url: String) {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                != PackageManager.PERMISSION_GRANTED) {
+            != PackageManager.PERMISSION_GRANTED
+        ) {
             ActivityCompat.requestPermissions(
-                    this,
-                    arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE),
-                    WRITE_STORAGE_DOWNLOAD_PHOTO_CODE)
+                this,
+                arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE),
+                WRITE_STORAGE_DOWNLOAD_PHOTO_CODE
+            )
         } else {
             val downloadManager = getSystemService(Context.DOWNLOAD_SERVICE) as DownloadManager
             val photoUri = Uri.parse(url)
 
             val request = DownloadManager.Request(photoUri).apply {
-                setDestinationInExternalPublicDir(Environment.DIRECTORY_PICTURES,
-                        "2Spree" + File.separator + photoUri.lastPathSegment)
+                setDestinationInExternalPublicDir(
+                    Environment.DIRECTORY_PICTURES,
+                    "2Spree" + File.separator + photoUri.lastPathSegment
+                )
                 setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
             }
 
@@ -67,7 +71,11 @@ class MainActivity : FlutterActivity() {
         }
     }
 
-    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<out String>,
+        grantResults: IntArray
+    ) {
         when (requestCode) {
             WRITE_STORAGE_DOWNLOAD_PHOTO_CODE -> {
                 if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {

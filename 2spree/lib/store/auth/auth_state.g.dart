@@ -86,11 +86,15 @@ class AuthStateBuilder implements Builder<AuthState, AuthStateBuilder> {
   _$AuthState _$v;
 
   String _username;
+
   String get username => _$this._username;
+
   set username(String username) => _$this._username = username;
 
   AuthStatus _status;
+
   AuthStatus get status => _$this._status;
+
   set status(AuthStatus status) => _$this._status = status;
 
   AuthStateBuilder();

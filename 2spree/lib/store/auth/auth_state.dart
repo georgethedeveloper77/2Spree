@@ -12,10 +12,12 @@ abstract class AuthState implements Built<AuthState, AuthStateBuilder> {
   AuthState._();
 
   factory AuthState([updates(AuthStateBuilder b)]) {
-    return _$AuthState._(
-      username: null,
-      status: AuthStatus.unknown,
-    ).rebuild(updates);
+    return _$AuthState
+        ._(
+          username: null,
+          status: AuthStatus.unknown,
+        )
+        .rebuild(updates);
   }
 }
 

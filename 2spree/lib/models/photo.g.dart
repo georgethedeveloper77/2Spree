@@ -168,58 +168,84 @@ class PhotoBuilder implements Builder<Photo, PhotoBuilder> {
   _$Photo _$v;
 
   String _id;
+
   String get id => _$this._id;
+
   set id(String id) => _$this._id = id;
 
   String _title;
+
   String get title => _$this._title;
+
   set title(String title) => _$this._title = title;
 
   String _authorName;
+
   String get authorName => _$this._authorName;
+
   set authorName(String authorName) => _$this._authorName = authorName;
 
   String _subredditName;
+
   String get subredditName => _$this._subredditName;
+
   set subredditName(String subredditName) =>
       _$this._subredditName = subredditName;
 
   String _subredditId;
+
   String get subredditId => _$this._subredditId;
+
   set subredditId(String subredditId) => _$this._subredditId = subredditId;
 
   PhotoMediaBuilder _source;
+
   PhotoMediaBuilder get source => _$this._source ??= new PhotoMediaBuilder();
+
   set source(PhotoMediaBuilder source) => _$this._source = source;
 
   PhotoMediaBuilder _fullImage;
+
   PhotoMediaBuilder get fullImage =>
       _$this._fullImage ??= new PhotoMediaBuilder();
+
   set fullImage(PhotoMediaBuilder fullImage) => _$this._fullImage = fullImage;
 
   PhotoMediaBuilder _thumbnail;
+
   PhotoMediaBuilder get thumbnail =>
       _$this._thumbnail ??= new PhotoMediaBuilder();
+
   set thumbnail(PhotoMediaBuilder thumbnail) => _$this._thumbnail = thumbnail;
 
   VideoBuilder _video;
+
   VideoBuilder get video => _$this._video ??= new VideoBuilder();
+
   set video(VideoBuilder video) => _$this._video = video;
 
   int _upvotes;
+
   int get upvotes => _$this._upvotes;
+
   set upvotes(int upvotes) => _$this._upvotes = upvotes;
 
   bool _upvoted;
+
   bool get upvoted => _$this._upvoted;
+
   set upvoted(bool upvoted) => _$this._upvoted = upvoted;
 
   bool _nsfw;
+
   bool get nsfw => _$this._nsfw;
+
   set nsfw(bool nsfw) => _$this._nsfw = nsfw;
 
   String _redditUrl;
+
   String get redditUrl => _$this._redditUrl;
+
   set redditUrl(String redditUrl) => _$this._redditUrl = redditUrl;
 
   PhotoBuilder();
@@ -356,15 +382,21 @@ class PhotoMediaBuilder implements Builder<PhotoMedia, PhotoMediaBuilder> {
   _$PhotoMedia _$v;
 
   String _url;
+
   String get url => _$this._url;
+
   set url(String url) => _$this._url = url;
 
   int _width;
+
   int get width => _$this._width;
+
   set width(int width) => _$this._width = width;
 
   int _height;
+
   int get height => _$this._height;
+
   set height(int height) => _$this._height = height;
 
   PhotoMediaBuilder();
@@ -442,7 +474,9 @@ class VideoBuilder implements Builder<Video, VideoBuilder> {
   _$Video _$v;
 
   String _url;
+
   String get url => _$this._url;
+
   set url(String url) => _$this._url = url;
 
   VideoBuilder();

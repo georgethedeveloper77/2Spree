@@ -11,7 +11,8 @@ abstract class Feed implements Built<Feed, FeedBuilder> {
   Feed._();
 
   factory Feed([updates(FeedBuilder b)]) {
-    return _$Feed._(
+    return _$Feed
+        ._(
           name: '',
           photosIds: BuiltList<String>(),
         )

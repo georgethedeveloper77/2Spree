@@ -134,13 +134,13 @@ class PreferencesSheet extends StatelessWidget {
               .body2
               .copyWith(color: Theme.of(context).disabledColor),
           children: [
-            const TextSpan(text: 'Glance • '),
+            const TextSpan(text: '2Spree • '),
             TextSpan(
               text: 'Privacy policy',
               style: const TextStyle(
                 decoration: TextDecoration.underline,
               ),
-              recognizer: TapGestureRecognizer()..onTap = _openPrivacyPolicy,
+              /*recognizer: TapGestureRecognizer()..onTap = _openPrivacyPolicy,*/
             ),
           ],
         ),

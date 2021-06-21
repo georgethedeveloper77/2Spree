@@ -62,12 +62,16 @@ class SubredditsSearchStateBuilder
   _$SubredditsSearchState _$v;
 
   String _lastQuery;
+
   String get lastQuery => _$this._lastQuery;
+
   set lastQuery(String lastQuery) => _$this._lastQuery = lastQuery;
 
   ListBuilder<String> _resultFeedsIds;
+
   ListBuilder<String> get resultFeedsIds =>
       _$this._resultFeedsIds ??= new ListBuilder<String>();
+
   set resultFeedsIds(ListBuilder<String> resultFeedsIds) =>
       _$this._resultFeedsIds = resultFeedsIds;
 

@@ -206,7 +206,7 @@ class _SubscriptionsView extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),
-            if (vm.subreddits.isEmpty)
+            /*if (vm.subreddits.isEmpty)
               const ListTile(
                 leading: Padding(
                   padding: EdgeInsets.only(left: 8),
@@ -230,7 +230,7 @@ class _SubscriptionsView extends StatelessWidget {
                             )
                           : const SizedBox(),
                     ))
-                .toList(),
+                .toList(),*/
           ],
         );
       },
