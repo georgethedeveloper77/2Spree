@@ -74,6 +74,7 @@ class _ImportSubscriptionsScreenState extends State<ImportSubscriptionsScreen> {
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.normal,
+                // ignore: deprecated_member_use
                 color: Theme.of(context).textTheme.title.color.withOpacity(.7),
               ),
             ),

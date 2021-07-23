@@ -5,70 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cedc4ae3-c4b5-4602-afd1-21d194cfd008" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2spree/android/app/src/main/res/ic_launcher-web.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2spree/android/app/src/main/res/mipmap-ldpi/ic_launcher.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2spree/android/app/src/main/res/playstore-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2spree/android/settings_aar.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2spree/lib/widgets/ColorLoader3.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/debug/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/src/debug/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/main/kotlin/com/mindhunter/spree/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/src/main/kotlin/com/mindhunter/spree/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/main/kotlin/com/mindhunter/spree/ReddigramApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/src/main/kotlin/com/mindhunter/spree/ReddigramApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/main/kotlin/flutterappname/spree/MainActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/main/kotlin/spree/spree/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/src/main/kotlin/spree/spree/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/main/res/drawable/ic_file_download.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/src/main/res/drawable/ic_file_download.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/main/res/drawable/launch_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/src/main/res/drawable/launch_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/android/app/src/profile/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/android/app/src/profile/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/api/api.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/api/api.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/api/mappers/subreddit_info_mapper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/api/mappers/subreddit_info_mapper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/api/response_models/link_listing_response.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/api/response_models/link_listing_response.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/api/response_models/link_listing_response.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/api/response_models/link_listing_response.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/api/response_models/serializers.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/api/response_models/serializers.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/api/response_models/subreddit_response.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/api/response_models/subreddit_response.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/consts.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/consts.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/models/feed.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/models/feed.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/models/feed.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/models/feed.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/models/models.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/models/models.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/models/photo.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/models/photo.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/models/subreddit.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/models/subreddit.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/screens/feed_tab.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/screens/feed_tab.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/2Spree.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/2Spree.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2spree/lib/screens/import_subscriptions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/screens/import_subscriptions.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/screens/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/screens/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/screens/photo_preview.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/screens/photo_preview.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/screens/preferences_sheet.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/screens/preferences_sheet.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/screens/subreddit.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/screens/subreddit.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/screens/subscriptions_tab.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/screens/subscriptions_tab.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/store/app_state.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/store/app_state.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/store/auth/auth_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/store/auth/auth_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/store/auth/auth_state.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/store/auth/auth_state.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/store/preferences/preferences_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/store/preferences/preferences_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/store/preferences/preferences_state.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/store/preferences/preferences_state.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/store/store.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/store/store.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/store/subreddits_search/subreddits_search_state.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/store/subreddits_search/subreddits_search_state.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/store/subreddits_search/subreddits_search_state.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/store/subreddits_search/subreddits_search_state.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/store/suggested_subscriptions/actions.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/store/suggested_subscriptions/actions.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/widgets/photo_grid_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/widgets/photo_grid_item.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/widgets/photo_list_item.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/widgets/photo_list_item.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/widgets/reddigram_logo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/widgets/reddigram_logo.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/widgets/state_aware/dark_theme_preference_tile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/widgets/state_aware/dark_theme_preference_tile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/widgets/state_aware/show_nsfw_preference_tile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/widgets/state_aware/show_nsfw_preference_tile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/widgets/subreddit_list_tile.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/widgets/subreddit_list_tile.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/lib/widgets/widgets.dart" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/lib/widgets/widgets.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/2spree/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/test/jwt_utils_test.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/test/repository_test.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2spree/test/widget_test.dart" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -10,7 +10,7 @@ class ReddigramLogo extends StatelessWidget {
       style: TextStyle(
         fontFamily: 'Pacifico',
         fontSize: 22.0,
-        fontWeight: FontWeight.normal,
+        fontWeight: FontWeight.bold,
       ),
     );
   }

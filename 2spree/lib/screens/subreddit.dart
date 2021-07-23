@@ -6,6 +6,7 @@ import 'package:flutter_redux/flutter_redux.dart';
 import 'package:reddigram/models/models.dart';
 import 'package:reddigram/screens/screens.dart';
 import 'package:reddigram/store/store.dart';
+import 'package:reddigram/widgets/loaders/ColorLoader3.dart';
 import 'package:reddigram/widgets/widgets.dart';
 import 'package:redux/redux.dart';
 
@@ -116,47 +117,45 @@ class _SubredditScreenState extends State<SubredditScreen> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 5.0),
             child: Tab(
-              icon: Icon(Icons.apps),
+              icon: Icon(Icons.grid_view),
             ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 5.0),
             child: Tab(
-              icon: Icon(Icons.view_list),
+              icon: Icon(Icons.table_rows),
             ),
           ),
         ],
       ),
       actions: [
         Container(
-          alignment: Alignment.center,
-          padding: const EdgeInsets.only(right: 16.0),
+          alignment: Alignment.centerRight,
+          padding: const EdgeInsets.only(right: 10.0),
           width: 150.0,
           child: StoreConnector<ReddigramState, _SubscribeViewModel>(
             converter: (store) =>
                 _SubscribeViewModel.fromStore(store, widget.subredditId),
             builder: (context, vm) => vm.subscribed
-                ? FlatButton(
+                ? FlatButton.icon(
                     onPressed: vm.unsubscribe,
-                    child: SizedBox(
-                      width: double.infinity,
-                      child: Text(
-                        'Unsubscribe'.toUpperCase(),
-                        textAlign: TextAlign.center,
-                        style: TextStyle(color: onBackgroundColor),
-                      ),
+                    icon: Icon(Icons.unsubscribe, color: onPrimaryColor),
+                    label: Text(
+                      'UnSubscribe'.toLowerCase(),
+                      textAlign: TextAlign.start,
+                      style: TextStyle(color: onBackgroundColor),
                     ),
-                    color: backgroundColor,
+                    color: Colors.red,
                   )
                 : FlatButton.icon(
                     onPressed: vm.subscribe,
-                    icon: Icon(Icons.add, color: onPrimaryColor),
+                    icon: Icon(Icons.subscriptions, color: onPrimaryColor),
                     label: Text(
                       'Subscribe'.toUpperCase(),
                       textAlign: TextAlign.center,
                       style: TextStyle(color: onPrimaryColor),
                     ),
-                    color: primaryColor,
+                    color: Colors.green,
                   ),
           ),
         ),
@@ -193,7 +192,7 @@ class _SubredditScreenState extends State<SubredditScreen> {
                   Container(
                     padding: const EdgeInsets.symmetric(vertical: 32.0),
                     alignment: Alignment.center,
-                    child: const CircularProgressIndicator(),
+                    child: ColorLoader3(),
                   ),
                 ][i],
               ),

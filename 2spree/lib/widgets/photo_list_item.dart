@@ -123,7 +123,7 @@ class _TopBar extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Expanded(
+       /* Expanded(
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Text(
@@ -133,12 +133,14 @@ class _TopBar extends StatelessWidget {
               style: mutedStyle,
             ),
           ),
-        ),
+        ),*/
         Padding(
-          padding: const EdgeInsets.only(right: 16.0),
+          padding: const EdgeInsets.only(
+            right: 16.0,
+          ),
           child: onSubredditTap != null
               ? ActionChip(
-                  pressElevation: 0,
+                  pressElevation: 10,
                   avatar: chipAvatar,
                   label: Text(
                     'r/$subredditName',

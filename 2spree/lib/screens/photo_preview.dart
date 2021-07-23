@@ -34,7 +34,7 @@ class PhotoPreviewScreen extends StatelessWidget {
         backgroundColor: Theme.of(context).appBarTheme.color.withOpacity(0.37),
         actions: [
           IconButton(
-            icon: Icon(Icons.file_download),
+            icon: Icon(Icons.get_app),
             tooltip: 'Download',
             onPressed: _downloadPhoto,
           ),

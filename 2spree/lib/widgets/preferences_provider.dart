@@ -10,8 +10,8 @@ class PreferencesProvider extends InheritedWidget {
         assert(child != null);
 
   static PreferencesState of(BuildContext context) {
-    return (context.dependOnInheritedWidgetOfExactType<PreferencesProvider>()
-            as PreferencesProvider)
+    /*context.dependOnInheritedWidgetOfExactType<PreferencesProvider>() as PreferencesProvider*/
+    return (context.dependOnInheritedWidgetOfExactType<PreferencesProvider>())
         .preferences;
   }
 

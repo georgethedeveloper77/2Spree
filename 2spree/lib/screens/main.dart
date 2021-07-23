@@ -112,7 +112,13 @@ class _MainScreenState extends State<MainScreen> {
         currentIndex: _currentTab,
         icons: [
           const IconNavigationBarItem(
-            icon: Icon(Icons.whatshot),
+            icon: ImageIcon(
+              AssetImage(
+                "assets/images/trend.png",
+              ),
+              size: 800,
+              color: Colors.red,
+            ),
             tooltip: 'Popular',
           ),
           const IconNavigationBarItem(
@@ -120,11 +126,21 @@ class _MainScreenState extends State<MainScreen> {
             tooltip: 'Your best',
           ),
           const IconNavigationBarItem(
-            icon: Icon(Icons.apps),
+            icon: ImageIcon(
+              AssetImage(
+                "assets/images/new.png",
+              ),
+              size: 800,
+            ),
             tooltip: 'Your newest',
           ),
           const IconNavigationBarItem(
-            icon: Icon(Icons.widgets),
+            icon: ImageIcon(
+              AssetImage(
+                "assets/images/sub.png",
+              ),
+              size: 800,
+            ),
             tooltip: 'Subscriptions',
           ),
         ],
@@ -177,9 +193,12 @@ class _MainScreenState extends State<MainScreen> {
               width: 3,
             ),
           ),
-          child: const Icon(
-            Icons.account_balance_rounded,
-            size: 30.0,
+          child: ImageIcon(
+            AssetImage(
+              "assets/images/2spree.png",
+            ),
+            size: 800,
+            color: Colors.red,
           ),
         ),
       ),

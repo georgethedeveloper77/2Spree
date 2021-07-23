@@ -38,7 +38,7 @@ class SubredditListTile extends StatelessWidget {
               onTap: onSubscribe,
               child: Padding(
                 padding: const EdgeInsets.all(16),
-                child: Icon(Icons.add),
+                child: Icon(Icons.add_to_photos),
               ),
             ),
     );

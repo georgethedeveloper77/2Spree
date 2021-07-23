@@ -14,7 +14,10 @@ class ShowNsfwPreferenceTile extends StatelessWidget {
         onSwitch: (showNsfw) => store.dispatch(setShowNsfw(showNsfw)),
       ),
       builder: (context, vm) => SwitchListTile(
-        title: const Text('Show adult content'),
+        title: const Text(
+          'Show Adult Content',
+          style: TextStyle(fontStyle: FontStyle.italic),
+        ),
         secondary: const Icon(Icons.block),
         value: vm.value,
         onChanged: vm.onSwitch,

@@ -84,10 +84,13 @@ class _SubscriptionsView extends StatelessWidget {
       builder: (BuildContext context) {
         return AlertDialog(
           title: const Text('Unsubscribing'),
-          content: Text('Do you really want to unsubscribe from r/$subreddit?'),
+          content: Text('Do you really want to Unsubscribe from r/$subreddit?'),
           actions: [
             FlatButton(
-              child: const Text('CANCEL'),
+              child: const Text(
+                'CANCEL',
+                style: TextStyle(color: Colors.green),
+              ),
               onPressed: () => Navigator.of(context).pop(),
             ),
             FlatButton(
@@ -121,8 +124,10 @@ class _SubscriptionsView extends StatelessWidget {
               ),
             ),
             title: const Text(
-              'Search subreddits',
-              style: TextStyle(fontWeight: FontWeight.bold),
+              'Search for anything',
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                  fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
             ),
           ),
           StoreConnector<ReddigramState, bool>(
@@ -189,7 +194,7 @@ class _SubscriptionsView extends StatelessWidget {
             padding: EdgeInsets.only(left: 8),
             child: Icon(Icons.sentiment_very_dissatisfied),
           ),
-          title: Text('No subreddits. Subscribe to some!'),
+          title: Text('No Subscriptions. Join some groups!'),
         ),
     ];
   }
@@ -202,7 +207,7 @@ class _SubscriptionsView extends StatelessWidget {
           children: [
             const ListTile(
               title: Text(
-                'You may also like',
+                '', //You may also like
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
             ),

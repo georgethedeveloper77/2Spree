@@ -5,7 +5,7 @@ import 'package:flutter_redux/flutter_redux.dart';
 import 'package:reddigram/models/models.dart';
 import 'package:reddigram/screens/screens.dart';
 import 'package:reddigram/store/store.dart';
-import 'package:reddigram/widgets/ColorLoader3.dart';
+import 'package:reddigram/widgets/loaders/ColorLoader3.dart';
 import 'package:reddigram/widgets/widgets.dart';
 import 'package:redux/redux.dart';
 
