@@ -4,6 +4,7 @@ import 'package:flutter_redux/flutter_redux.dart';
 import 'package:reddigram/app.dart';
 import 'package:reddigram/consts.dart';
 import 'package:reddigram/store/store.dart';
+import 'package:reddigram/widgets/loaders/color_loader_2.dart';
 import 'package:reddigram/widgets/widgets.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -23,7 +24,7 @@ class PreferencesSheet extends StatelessWidget {
     return showDialog<bool>(
       context: context,
       builder: (BuildContext context) => AlertDialog(
-        title: const Text('Warning'),
+        title: const Text('Warning',style: TextStyle(color: Colors.red),),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -111,12 +112,12 @@ class PreferencesSheet extends StatelessWidget {
                 )
               : ListTile(
                   title: const Text('Connect to Reddit'),
-                  leading: const Icon(Icons.account_circle),
+                  leading: const Icon(Icons.record_voice_over),
                   onTap: () => _connectToReddit(context),
                   trailing: authState.status == AuthStatus.authenticating
                       ? Transform.scale(
                           scale: 0.5,
-                          child: const CircularProgressIndicator(),
+                          child:  ColorLoader2(),
                         )
                       : null,
                 ),
